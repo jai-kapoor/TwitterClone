@@ -2,10 +2,32 @@ body {
     background-color: lightblue;
 }
 
+h1 {
+  justify-content: center;
+  display: flex;
+  font-size: 35px;
+  margin-left: 160px;
+}
+
 
 #tweet {
     background-color: white;
 }
+
+
+.send-tweet {
+  justify-content: center;
+  display: flex;
+
+}
+
+.send-tweet input[type=text] {
+
+  font-size: 20px;
+}
+  
+
+
 
 .sidenav {
   height: 100%;
@@ -46,6 +68,7 @@ body {
 
 
 
+
 topnav {
   overflow: hidden;
   background-color: #e9e9e9;
@@ -68,24 +91,6 @@ topnav {
 
 
 
-.post {
-  display: flex;
-  align-items: flex-start;
-  border-bottom: 1px solid var(--twitter-background);
-  padding-bottom: 10px;
-}
-
-.post__body img {
-  width: 450px;
-  object-fit: contain;
-  border-radius: 20px;
-}
-
-.post__body {
-  flex: 1;
-  padding: 10px;
-}
-
 
 
 
@@ -95,36 +100,23 @@ topnav {
 
 
 blockquote {
-  display: inline-block;
-  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 16px;
-  border-color: rgb(255, 255, 255) #ddd #bbb;
+
+  flex-grow: 3;
+  display: flex;
   border-radius: 8px;
   border-style: solid;
   border-width: 1px;
+  font-size: 12px;
+  padding: 10px 16px 16px 16px;
+  border-color: black; 
+  background-color: white;
+
+  /* display: inline-block;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-weight: bold;
+  line-height: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
   margin: 10px 5px;
-  padding: 0 16px 16px 16px;
-  max-width: 468px;
-  fill: #ddd;
+  padding: 0 16px 16px 16px; */
 }
 
-blockquote p {
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 20px;
-}
-
-blockquote a {
-  color: inherit;
-  font-weight: normal;
-  text-decoration: none;
-  outline: 0 none;
-}
-
-blockquote a:hover,
-blockquote a:focus {
-  text-decoration: underline;
-}
